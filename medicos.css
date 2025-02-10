@@ -1,0 +1,107 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAEAEA;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container principal */
+div {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #34495E;
+    margin-bottom: 20px;
+}
+
+/* Seção de médicos e enfermeiros */
+.medicos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Estilo de cada lista (médicos e enfermeiros) */
+#medicos, #enfermeiros {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#medicos h2, #enfermeiros h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #34495E;
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada item (médico ou enfermeiro) */
+#medicos p, #enfermeiros p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos botões */
+.botao {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cores para status dos botões */
+.disponivel {
+    background-color: #2ECC71;
+    color: white;
+}
+
+.indisponivel {
+    background-color: #E74C3C;
+    color: white;
+}
+
+/* Efeito de hover nos botões */
+.botao:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Ajustando o layout para telas menores */
+@media (max-width: 768px) {
+    .medicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div {
+        padding: 20px;
+    }
+}

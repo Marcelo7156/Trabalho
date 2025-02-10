@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leitos Hospitalares</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Visualização de Leitos e Quartos</h1>
+            </header>
+
+              
+        <div class="botoes">
+            <button class="btn cadastro" type="button" onclick="window.location.href='cadastro.html'">Cadastro de Paciente</button>
+            <button class="btn medicos" type="button" onclick="window.location.href='medicos.html'">Médicos Disponíveis</button>
+        </div>
+
+            
+            <section class="leitos">
+                <div class="leito" id="leito1">
+                    <div class="status disponível"></div>
+                    <p>Quarto 101</p>
+                </div>
+                <div class="leito" id="leito2">
+                    <div class="status ocupado"></div>
+                    <p>Quarto 102</p>
+                </div>
+                <div class="leito" id="leito3">
+                    <div class="status preparando"></div>
+                    <p>Quarto 103</p>
+                </div>
+                <div class="leito" id="leito4">
+                    <div class="status disponível"></div>
+                    <p>Quarto 104</p>
+                </div>
+            </section>
+
+            <button type="button" onclick="window.location.href='index.html'">VOLTAR</button>
+
+            <footer>
+                <p>&copy; 2025 Sistema de Gestão de Leitos</p>
+                Feito Por: Thiago; Nathalia; Fernando; Marcelo
+            </footer>
+        </div>
+    </body>
+    </html>

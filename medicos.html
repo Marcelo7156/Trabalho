@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais de Plantão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Profissionais de Plantão</h1>
+
+        <section class="grid-container">
+            <!-- Médicos -->
+            <div class="grupo">
+                <h2>Médicos de Plantão</h2>
+                <div class="grid">
+                    <div class="card">
+                        <p>Dr. Alberto</p>
+                        <button class="botao disponivel">Disponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Dr. Ruan</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Dr. Paulo</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Dra. Ana</p>
+                        <button class="botao disponivel">Disponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Dra. Beatriz</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Dra. Joana</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enfermeiros -->
+            <div class="grupo">
+                <h2>Enfermeiros de Plantão</h2>
+                <div class="grid">
+                    <div class="card">
+                        <p>Luana</p>
+                        <button class="botao disponivel">Disponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Marcos</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Pedro</p>
+                        <button class="botao disponivel">Disponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Maria</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Angelica</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                    <div class="card">
+                        <p>João</p>
+                        <button class="botao disponivel">Disponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Yan</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Luana</p>
+                        <button class="botao disponivel">Disponível</button>
+                    </div>
+                    <div class="card">
+                        <p>Larissa</p>
+                        <button class="botao indisponivel">Indisponível</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button type="button" class="voltar" onclick="window.location.href='quarto.html'">VOLTAR</button>
+    </div>
+
+    <script>
+        // Alternar disponibilidade dos profissionais
+        document.querySelectorAll('.botao').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('disponivel');
+                button.classList.toggle('indisponivel');
+                button.textContent = button.classList.contains('disponivel') ? 'Disponível' : 'Indisponível';
+            });
+        });
+    </script>
+
+</body>
+</html>
